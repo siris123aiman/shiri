@@ -1,0 +1,99 @@
+{%extends 'base.html'%}
+
+{%block title%}
+
+information
+
+{%endblock%}
+
+{%block body%}
+<style>
+    body{
+        background-color:#FCFBF4 ;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    }
+    .container{
+        display: flex;
+        justify-items: center;
+        background-color: aliceblue;
+        flex-direction: column;
+        border-radius: 8px;
+        width:900px;
+        margin-top: 20px;
+        text-align: center;
+        height: 750px;
+        margin-bottom: 50px;
+        
+    }
+    h1{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        
+        background-color: rgb(64, 151, 232);
+        padding: 3px;
+        margin: 0px;
+        color: azure;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .education {
+  column-count: 2;
+  column-rule: 1px dotted rgb(26, 26, 26);
+  border-style: dotted;
+  border-radius: 5px;
+  border-width: 1px;
+  width: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 130px;
+}
+span{
+    margin:0px ;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: brown;
+}
+footer{
+    font-size: larger;
+    position: absolute;
+    left: 485px;;
+    bottom: 150px;
+}
+</style>
+<div class="container">
+ <h1>
+    Info Section
+ </h1>
+ <h2 style="margin-bottom: 4px;">
+    Shirish Devkota
+ </h2>
+ <h2 style="margin-top: 0px;">
+    Age: 18
+ </h2>
+ <div class="education">
+    <h3>
+        <span>SEE</span><br>
+        GPA: 3.5<br>
+        Institution: Kalika SEBS<br>
+        Year of completion: 2079<br>
+
+    </h3>
+    <h3>
+        <h3>
+            <br><span>+2</span><br>
+            GPA: 3.?<br>
+            Institution: Valmiki HSS<br>
+            Year of completion: 2081
+    
+        </h3>
+    </h3>
+ </div>
+ <footer>
+    Email: shirishdevkota1@gmail.com
+ </footer>
+</div>
+
+{%endblock%}

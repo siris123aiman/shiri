@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(45, 40, 40);
+        text-align: center;    
+    }
+    div{
+        display: inline-block;
+        width:500px;
+        padding: 200px 50px;
+        font-size: 200%;
+        margin:2px;
+        font-weight: bold;
+        transition: 0.35s;
+
+    }
+    div:hover{
+        opacity: 0.6;
+        color:rgb(0, 0, 0);
+    }
+    .info{
+        background-color: rgb(64, 171, 224);
+        color:white;
+        font-weight: bold;
+        
+    }
+    .games{
+        background-color: rgb(64, 224, 96);
+        color:white;
+        margin-right: 0px;
+    }
+    .music{
+        background-color: rgb(232, 164, 208);
+        color:white;
+        
+    }
+    .food{
+        background-color: rgb(224, 203, 64);
+        color:white;
+        margin-right: 0px;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+</style>
+<body>
+   <a href="{{url_for('info')}}">
+     <div class="info">
+        INFO
+    </div></a>
+
+    <a href="{{url_for('games')}}">
+    <div class="games">
+GAMES
+    </div>
+    </a>
+
+    <a href="{{url_for('music')}}">
+    <div class="music">
+MUSIC
+    </div>
+</a>
+<a href="{{url_for('food')}}">
+    <div class="food">
+FOOD
+    </div>
+</a>
+
+</body>
+</html>
